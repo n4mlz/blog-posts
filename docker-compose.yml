@@ -1,0 +1,6 @@
+services:
+  main:
+    build: .
+    container_name: blog
+    ports:
+      - "80:8080"

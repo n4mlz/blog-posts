@@ -2,7 +2,7 @@ FROM node:lts AS build
 RUN git clone https://github.com/n4mlz/blog.git app
 WORKDIR /app
 RUN npm install
-COPY . ./src/content/posts
+COPY ./*.md ./src/content/posts/
 RUN npm run build
 
 FROM nginx:alpine AS runtime
