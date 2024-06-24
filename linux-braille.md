@@ -11,7 +11,7 @@ tags: ['archlinux', 'linux']
 
 ## 困ったこと
 
-![スクリーンショット](./images/linux-braille/screenshot.png)
+![スクリーンショット](/src/content/posts/images/linux-braille/screenshot1.png)
 
 これは私のスクリーンショットの一部です。Linux の TUI ではこのように点字を使ってグラフや画像を表現することがありますが、上の画像のように点字が上手く表示できていません。これを直します。
 
@@ -42,7 +42,7 @@ yay -S ttf-symbola
 
 reboot して、再度点字を表示してみると、想定通りの表示になっていることがわかります。
 
-![スクリーンショット](./images/linux-braille/screenshot2.png)
+![スクリーンショット](/src/content/posts/images/linux-braille/screenshot2.png)
 
 ## おわりに
 今回は Linux で点字の表示がおかしいときの対処法について書いてみました。誰かの役に立てれば幸いです。
