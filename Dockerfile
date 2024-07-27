@@ -3,7 +3,7 @@ RUN git clone https://github.com/n4mlz/blog.git app
 WORKDIR /app
 RUN npm install
 COPY ./*.md ./src/content/posts/
-COPY ./images/* ./src/content/posts/images/
+COPY ./images ./src/content/posts/images
 RUN npm run build
 
 FROM nginx:alpine AS runtime
