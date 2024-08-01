@@ -17,14 +17,14 @@ tags: ['git', 'github']
 Git では、`user.name` を Auther、`user.email` を Committer として判断しています。しかし、これらの情報はご存知の通り、容易に変更可能です。
 
 ```bash
-git config --local user.name "torvalds"
-git config --local user.email "torvalds@linux-foundation.org"
+$ git config --local user.name "torvalds"
+$ git config --local user.email "torvalds@linux-foundation.org"
 ```
 
 ここで、何かしらをコミットしてみます。
 
 ```bash
-git commit -m "俺がリーナス・トーバルズだ！！！"
+$ git commit -m "俺がリーナス・トーバルズだ！！！"
 ```
 
 するとどうでしょう。
@@ -166,8 +166,8 @@ MnRBvYw+JWPXqWy9z91YwU6QKhSOUo7Uo/oK
 
 手元の Git で GPG 署名する時に使用する GPG キーの ID を指定しておきます。
 
-```
-git config --global user.signingkey 091B69E9C76CF734
+```bash
+$ git config --global user.signingkey 091B69E9C76CF734
 ```
 
 これで、Git でコミットに署名する準備が整いました。
@@ -177,8 +177,8 @@ git config --global user.signingkey 091B69E9C76CF734
 コミット時に `-S` オプションを付けることで、コミットに署名することができます。  
 コミットの署名時には、パスフレーズの入力が必要です。
 
-```
-git commit -S -m "Signed commit"
+```bash
+$ git commit -S -m "Signed commit"
 ```
 
 push して GitHub で確認してみます。
